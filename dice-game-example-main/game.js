@@ -6,4 +6,16 @@ document.querySelector("#rollButton").addEventListener("click", e =>{
         image.src = "assets/die_rolling.gif";
     });
 
+    // 3. land on a new random number
+    setTimeout(() => {
+        // this function will run after the timeout duration below
+        
+    }, 1000 /* In miliseconds*/);
+
 });
+
+function setDieImages(imagePath) {
+    document.querySelectorAll("#gameboard img").forEach(image => {
+        image.src = imagePath;
+    });
+}
